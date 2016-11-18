@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: conda-gitenv
@@ -7,7 +7,7 @@ package:
 source:
   fn: conda-gitenv-{{ version }}.tar.gz
   url: https://github.com/SciTools/conda-gitenv/archive/v{{ version }}.tar.gz
-  sha256: afbcfea861c2fedecd640248a97f47b0538f29b7c3966eeaa724a7636d478633
+  sha256: 5f1b4ed3afc954fad06bb8aedab27ee9108cd968bb1b60809fd17e20f9654614
 
 build:
   number: 0
@@ -48,3 +48,4 @@ extra:
   recipe-maintainers:
     - pelson
     - bjlittle
+    - lbdreyer
