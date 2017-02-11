@@ -1,13 +1,15 @@
-{% set version = "0.2.1" %}
+{% set name = "conda-gitenv" %}
+{% set version = "0.2.2" %}
+{% set sha = "8348608173a001ab798650a94a3bd7f5b91beed4bcc60081024f7dea3525e028" %}
 
 package:
-  name: conda-gitenv
+  name: {{ name }} 
   version: {{ version }}
 
 source:
-  fn: conda-gitenv-{{ version }}.tar.gz
-  url: https://github.com/SciTools/conda-gitenv/archive/v{{ version }}.tar.gz
-  sha256: 5f1b4ed3afc954fad06bb8aedab27ee9108cd968bb1b60809fd17e20f9654614
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/SciTools/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha }} 
 
 build:
   number: 0
@@ -38,7 +40,7 @@ test:
     - conda gitenv deploy --help
 
 about:
-  home: https://github.com/SciTools/conda-gitenv
+  home: https://github.com/SciTools/{{ name }}
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
