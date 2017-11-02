@@ -1,6 +1,6 @@
 {% set name = "conda-gitenv" %}
-{% set version = "0.2.2" %}
-{% set sha = "8348608173a001ab798650a94a3bd7f5b91beed4bcc60081024f7dea3525e028" %}
+{% set version = "0.3.0" %}
+{% set sha = "510aad836feb5e0c3be2be3546a974319dff7d6fb389e8ab6c20a5ff92da6a17" %}
 
 package:
   name: {{ name }} 
@@ -25,9 +25,9 @@ requirements:
     - setuptools
     - gitpython
     - pyyaml
-    - conda >=4.1.0
+    - conda
     - conda-build-all
-    - conda-build !=2.0.9
+    - conda-build
 
 test:
   imports:
